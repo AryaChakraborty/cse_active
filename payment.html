@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment_style.css">
+    <style>
+        a:hover{
+    color: rgb(255, 0, 0);
+    text-decoration:teal;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body><a href="index.html" target="_blank">Home</a><br><br><div class="container">
+    <form action="">
+        <h1 class="main_head">Payment Form</h1>
+        <hr>
+        <h2>Contact Information</h2>
+            <legend>Name*</legend><input type="text" name="name" required placeholder="Mangalam Sharma">
+            <p>Sex*</p><fieldset>
+            <p>
+                Male <input type="radio" name="gender" id="m" required>&nbsp;&nbsp;&nbsp;
+                Female <input type="radio" name="gender" id="f" required>&nbsp;&nbsp;&nbsp;
+                Prefer not to say <input type="radio" name="gender" id="o" required>&nbsp;&nbsp;&nbsp;
+            </p></fieldset><br>
+        
+        
+            <legend>Address</legend><textarea name="address" id="address" cols="100" rows="7" placeholder="Mahatma Gandhi Street, Block B, Behala, Kolkata"></textarea><br><br>
+        
+        
+            <legend>Email*</legend><input type="email" name="email" id="email" required placeholder="mangalam69@gmail.com">
+        <br><br>
+        
+            <legend>Pin Code</legend><input type="number" name="pincode" id="pincode" placeholder="123456">
+        
+        <br><br><hr>
+        <h2>Payment Information</h2>
+        
+            <legend>Card Name*</legend>
+            <select name="card_name" id="cn">
+                <option value="">----Select Card Type----</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">RuPay</option>
+            </select>
+        
+        <br><br>
+        
+            <legend>Card Number*</legend>
+            <input type="number" name="card_number" id="card_number" required placeholder="1111-2222-3333-4444">
+        
+        <br><br>
+        
+            <legend>Card Holder Name*</legend>
+            <input type="text" name="card_holder_name" id="chn" required placeholder="Mangalam Sharma">
+        
+        <br><br>
+        
+            <legend>Expiration Date*</legend>
+            <input type="date" name="expdate" id="expdate" required>
+        
+        <br><br>
+        
+            <legend>CVV*</legend>
+            <input type="password" name="cvv" id="cvv" required placeholder="123">
+        
+        <br><br>
+        <input class="pay_button" type="submit" value="Pay Now">&nbsp;&nbsp;
+        <input class="reset_button" type="reset" value="Reset">
+    </form></div>
+</body>
+</html>

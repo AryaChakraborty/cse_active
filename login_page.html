@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login_style.css">
+    <style>
+        ::-webkit-scrollbar {
+          width: 15px;
+        }
+        ::-webkit-scrollbar-track {
+          background: rgba(0, 0, 0, 0.089); 
+          box-shadow: inset 0 0 5px grey; 
+        }
+        ::-webkit-scrollbar-thumb {
+          background:rgba(0, 0, 0, 0.5) ; 
+          border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: rgba(59, 93, 187, 0.829); 
+        }
+        </style>
+</head>
+<body>
+    <div class="mainscreen">
+		<!-- Creating top hero text part -->
+		<div class="toppart">
+            <a href="index.html" target="_blank" style="color: blanchedalmond;">Home</a>
+			<div class="herotext">
+				<h1><img class="logo" src="image/118018696-grunge-green-active-word-with-star-icon-round-rubber-seal-stamp-on-white-background.jpg" alt="Logo">CSE Active Login</h1>
+			</div>
+		</div>
+
+		<!-- Creating bottom part form img and form -->
+		<div class="bottompart">
+			<!-- Image Part -->
+			<div class="imgpart">
+				<img src="image/800px_COLOURBOX18096451.jpg" class="heroimg" alt="">
+			</div>
+
+			<!-- Form Part -->
+			<div class="formpart">
+				<form>
+					<h2>Signup and Get Notes in Drive</h2>
+					<!-- For Full Name -->
+					<label for="name" style="font-weight: bold; font-size: larger;">Full Name</label>
+					<input class="inputbox" name="name" type="text" class="name" autocomplete="off">
+
+					<!-- For user email to receive notes -->
+					<label for="email" style="font-weight: bold; font-size: larger;">Email</label>
+					<input class="inputbox" type="email" class="email" name="email" autocomplete="off">
+                    <br><br>
+
+					<!-- For selecting course which email he wantss -->
+					<label for="course" style="font-weight: bold; font-size: larger;">Select your Role :</label>
+					<div class="options" style="width: 20%; color: #7b7b7c; font-size: larger;">
+                            <p>
+                                Member<input type="radio" name="role" id="m" required><br>
+                                Other<input type="radio" name="role" id="f" required>
+                            </p><br>
+					</div>
+
+
+					<!-- For Agree line and checkbox -->
+					<input type="checkbox" class="agree" checked>
+					<label for="agree" class="agree">I want to receive promotion mails and notes for the lectures</label>
+
+					<!-- For Privacy Policy Line -->
+					<label class="privacy_policy">By clicking the submit button, you agree to our <span>Terms & Conditions</span> and <span>Privacy Policy</span>.</label>
+
+
+					<!-- For Submit Button-->
+					<button class="submitbtn">Submit</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
